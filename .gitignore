@@ -5,7 +5,7 @@ _site/
 .jekyll-metadata
 
 # Ignore the Gemfile that is generated
-Gemfile.lock\
+Gemfile.lock
 
 # Ignore the vendor file at root level and bundle for alternative installation
 vendor/
