@@ -1,3 +1,7 @@
+
+{% assign acc_id = page.collection_name %}
+{% assign acc_col = site[page.collection_name] | reverse %}
+
 <div class="accordion" id="{{ acc_id }}">
   {% for post in acc_col %}
     {% include collection-item.html %}

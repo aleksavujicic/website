@@ -3,8 +3,7 @@ layout: collection
 title: "Publications"
 permalink: /publications/
 author_profile: true
+collection_name: publications
 ---
 
-{% assign acc_id = 'publications' %}
-{% assign acc_col = site.publications | reverse %}
 {% include collection-accordion.html %}
