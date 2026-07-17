@@ -2,7 +2,6 @@
 title: "Irreducible Representations of&nbsp;\\(S_n\\)"
 excerpt: "A brief report on the irreducible representations of the symmetric group \\(S_n\\). Written as a requirement for a representation theory course."
 collection: notes
-permalink: /notes/sn-reps
 date: 2020-12-14
 files:
   - title: Notes

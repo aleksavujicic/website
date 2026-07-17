@@ -2,7 +2,6 @@
 title: "MATH136 - Linear Algebra 1"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2022-linear-algebra
 venue: "University of Waterloo"
 date: 2022-05-01
 location: "Waterloo, ON, Canada"

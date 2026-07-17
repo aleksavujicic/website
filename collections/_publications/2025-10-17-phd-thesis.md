@@ -2,7 +2,6 @@
 title: "Fourier Analysis of Local Fell Groups"
 collection: publications
 category: thesis
-permalink: /publication/phd-thesis
 excerpt: 'PhD Thesis completed under the supervision of Nico Spronk.'
 date: 2025-10-17
 venue: 'University of Waterloo'

@@ -2,7 +2,6 @@
 title: "Characterisations of Pseudo-amenability"
 collection: publications
 category: article
-permalink: /publication/2021-08-30-characterisations-of-pseudo-amenability
 excerpt: Paper published as a result of my Master's work.
 date: 2021-08-30
 venue: 'Studia Mathematica'
