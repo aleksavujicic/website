@@ -1,6 +1,9 @@
 .sidebar{
     position: fixed;
-    top: 150px;
-    left: 0;
-    width: 600px;
+    width: inherit;
+}
+
+.author__avatar {
+    width: 150px;
+    clip-path: circle(50%);
 }
