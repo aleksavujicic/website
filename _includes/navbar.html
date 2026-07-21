@@ -25,6 +25,15 @@
             <a class="nav-link {{ a_class }}" href="{{ base_path }}{{ collection.url }}">{{ collection.title }}</a>
           </li>
         {% endfor %}
+
+        {% if page.url contains '/other/' %}
+          {% assign a_class = 'active' %}
+        {% else %}
+          {% assign a_class = '' %}
+        {% endif %}
+        <li class="nav-item">
+          <a class="nav-link {{ a_class }}" href="{{ base_path }}/other/">Miscellany</a>
+        </li>
       </ul>
     </div>
   </div>
