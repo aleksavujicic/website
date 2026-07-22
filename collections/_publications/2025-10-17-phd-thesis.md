@@ -1,14 +1,16 @@
 ---
-title: "Fourier Analysis of Local Fell Groups"
-collection: publications
+title: Fourier Analysis of Local Fell Groups (Thesis)
 category: thesis
-excerpt: 'PhD Thesis completed under the supervision of Nico Spronk.'
+excerpt: PhD Thesis completed under the supervision of Nico Spronk.
+
 date: 2025-10-17
-venue: 'University of Waterloo'
-source-link: 'https://hdl.handle.net/10012/22593'
+publisher: University of Waterloo
+publish-link: 'https://hdl.handle.net/10012/22593'
+
 files:
-  - title: 'Thesis'
+  - title: Thesis
     url: 'phd-thesis.pdf'
+
 abstract: |
   In 1972, Bagget showed that a separable locally compact group \(G\) is compact if and only if its dual space \(\widehat{G}\) is discrete.
   Curiously however, there are non-discrete groups whose duals are compact, and such a group was identified in the same paper.
