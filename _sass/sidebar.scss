@@ -1,9 +1,38 @@
-.sidebar{
+.sidebar {
     position: fixed;
     width: inherit;
+    margin: 3px;
+    padding: 10px;
+
+    border: 2px solid #7db3e3;
+    border-radius: 10px;
+    font-size: small;
 }
 
 .author__avatar {
-    width: 150px;
-    clip-path: circle(50%);
+    vertical-align: top;
+
+    display: block;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+        vertical-align: top;
+
+        max-width: 175px;
+        border-radius: 50%;
+        width: 80%;
+
+        padding: 2px;
+        border: 1px solid blue;
+    }
+}
+
+.social-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
 }
