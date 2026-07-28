@@ -52,8 +52,8 @@ layout: default
         </div>
         {% endif %}
 
-        {% assign collection = site.data.structure.collections | find_exp:"collection","page.url contains collection.url" %}
-        <a class="" href="{{ base_path }}{{ collection.url }}">Return to {{ collection.title }}</a>
+        {% assign collection = site.data.structure.collections[page.collection] %}
+        <a class="" href="{{ base_path }}{{ collection.return-url }}">Return to {{ collection.return-title }}</a>
 
       </section>
     </div>

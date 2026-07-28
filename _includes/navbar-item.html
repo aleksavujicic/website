@@ -1,0 +1,44 @@
+
+
+{% case navitem.type %}
+  {% when 'submenu' %}
+    <li class="nav-item dropdown">
+      {% capture a_class %}
+        {% for subitem in navitem.content %}
+          {% include navbar-item-active.html item=subitem %}
+        {% endfor %}
+      {% endcapture %}
+      <a class="nav-link dropdown-toggle {{ a_class }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        {{ navitem.title }}
+      </a>
+
+      <ul class="dropdown-menu">
+        {% for subitem in navitem.content %}
+          {% capture sub_a_class %}
+            {% include navbar-item-active.html item=subitem %}
+          {% endcapture %}
+          <li><a class="dropdown-item {{ sub_a_class }}" href="{{ base_path }}{{ subitem.url }}">{{ subitem.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% else %}
+    {% capture a_class %}
+      {% include navbar-item-active.html item=navitem %}
+    {% endcapture %}
+    <li class="nav-item">
+      <a class="nav-link {{ a_class }}" href="{{ base_path }}{{ navitem.url }}">{{ navitem.title }}</a>
+    </li>
+{% endcase %}
+
+
+
+
+{% comment %}
+<li class="nav-item">
+  <a class="nav-link" href="#">Link</a>
+</li>
+        <li><hr class="dropdown-divider"></li>
+<li class="nav-item">
+  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+</li>
+{% endcomment %}

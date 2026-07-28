@@ -1,0 +1,29 @@
+{% assign url-match = include.item.url-match %}
+{% unless url-match %}
+  {% assign url-match = include.item.url %}
+{% endunless %}
+
+{% case include.item.url-test %}
+  {% when 'exact' %}
+    {% if page.url == url-match %}
+      active
+    {% endif %}
+
+  {% when 'multi' %}
+    {% assign urls = url-match | split: "|" %}
+    {% assign success = false %}
+    {% for url in urls %}
+      {% if page.url contains url %}
+        {% assign success = true %}
+      {% endif %}
+    {% endfor %}
+    {% if success == true %}
+      active
+    {% endif %}
+
+  {% else %}
+    {% if page.url contains url-match %}
+      active
+    {% endif %}
+
+{% endcase %}

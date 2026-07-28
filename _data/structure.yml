@@ -8,27 +8,41 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 collections:
-  notes:
-    title: "Personal Notes"
-    url: /notes/
-    folder: "notes"
   publications:
-    title: "Publications"
-    url: /publications/
-    folder: "publications"
+    return-title: "Publications"
+    return-url: /publications/
   talks:
-    title: "Talks"
-    url: /talks/
-    folder: "talks"
+    return-title: "Talks"
+    return-url: /talks/
   teaching:
-    title: "Teaching"
-    url: /teaching/
-    folder: "teaching"
-
+    return-title: "Teaching"
+    return-url: /teaching/
+  notes:
+    return-title: "Notes"
+    return-url: /notes/
+  seminars:
+    return-title: "Talks"
+    return-url: /talks/
 
 navbar:
-  - publications
-  - talks
-  - teaching
-  - notes
+  - title: "Home"
+    url: /
+    url-test: exact
+  - type: submenu
+    title: "Mathematics"
+    content:
+      - title: "Publications"
+        url: /publications/
+      - title: "Talks"
+        url: /talks/
+        url-test: multi
+        url-match: /talks/|/seminars/
+      - title: "Teaching"
+        url: /teaching/
+      - title: "Personal Notes"
+        url: /notes/
+      - title: "Personal Notes"
+        url: /notes/
+  - title: "Miscellany"
+    url: /other/
 

@@ -6,56 +6,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        {% if page.url == '/' %}
-          {% assign home_a_class = 'active' %}
-        {% else %}
-          {% assign home_a_class = '' %}
-        {% endif %}
-        <li class="nav-item">
-          <a class="nav-link {{ home_a_class }}" aria-current="page" href="/">Home</a>
-        </li>
-        {% for colname in site.data.structure.navbar %}
-          {% assign collection = site.data.structure.collections[colname] %}
-          {% if page.url contains collection.url %}
-            {% assign a_class = 'active' %}
-          {% else %}
-            {% assign a_class = '' %}
-          {% endif %}
-          <li class="nav-item">
-            <a class="nav-link {{ a_class }}" href="{{ base_path }}{{ collection.url }}">{{ collection.title }}</a>
-          </li>
+        {% for navitem in site.data.structure.navbar %}
+          {% include navbar-item.html %}
         {% endfor %}
-
-        {% if page.url contains '/other/' %}
-          {% assign a_class = 'active' %}
-        {% else %}
-          {% assign a_class = '' %}
-        {% endif %}
-        <li class="nav-item">
-          <a class="nav-link {{ a_class }}" href="{{ base_path }}/other/">Miscellany</a>
-        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-
-        {% comment %}
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-        {% endcomment %}
