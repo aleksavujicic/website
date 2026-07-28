@@ -41,19 +41,14 @@ layout: default
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
         {% endif %}
 
-        {% if page.source-link or page.files %}
-        <div>
-          {% for file in page.files %}
-            <a href="/files/{{ file.url }}" target="_blank" class="btn">{{ file.title }} <i class="fa fa-download"></i></a>
+        <div class="item-buttons">
+          {% for attachment in page.attachments %}
+            {% include attachment-button.html attachment=attachment %}
           {% endfor %}
-          {% if page.source-link %}
-            <a href="{{ page.source-link }}" target="_blank" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }} <i class="fa fa-external-link"></i></a>
-          {% endif %}
         </div>
-        {% endif %}
 
         {% assign collection = site.data.structure.collections[page.collection] %}
-        <a class="" href="{{ base_path }}{{ collection.return-url }}">Return to {{ collection.return-title }}</a>
+        <a class="btn btn-link" href="{{ base_path }}{{ collection.return-url }}">Return to {{ collection.return-title }}</a>
 
       </section>
     </div>

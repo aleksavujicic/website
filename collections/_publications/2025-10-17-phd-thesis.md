@@ -5,11 +5,13 @@ excerpt: PhD Thesis completed under the supervision of Nico Spronk.
 
 date: 2025-10-17
 publisher: University of Waterloo
-publish-link: 'https://hdl.handle.net/10012/22593'
 
-files:
+attachments:
   - title: Thesis
-    url: 'phd-thesis.pdf'
+    file: phd-thesis.pdf
+  - type: link
+    title: UW Space
+    url: https://hdl.handle.net/10012/22593
 
 abstract: |
   In 1972, Bagget showed that a separable locally compact group \(G\) is compact if and only if its dual space \(\widehat{G}\) is discrete.

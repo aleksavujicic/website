@@ -1,0 +1,49 @@
+{% assign attachment = include.attachment %}
+
+{% if attachment.type %}
+  {% assign type = attachment.type %}
+{% else %}
+  {% assign type = "file" %}
+{% endif %}
+
+{% case type %}
+  {% when "file" %}
+    {% assign icon = "fa fa-download" %}
+    {% assign href = "/files/" | append: attachment.file %}
+    {% assign title = "File" %}
+    {% assign class = "btn btn-outline-primary" %}
+    {% assign target = "_blank" %}
+  {% when "link" %}
+    {% assign icon = "fa fa-external-link" %}
+    {% assign href = attachment.url %}
+    {% assign title = "Link" %}
+    {% assign class = "btn btn-outline-primary" %}
+    {% assign target = "_blank" %}
+{% endcase %}
+
+
+{% if attachment.icon %}
+  {% assign icon = attachment.icon %}
+{% endif %}
+
+{% if attachment.title %}
+  {% assign title = attachment.title %}
+{% endif %}
+
+{% if attachment.subtitle %}
+  {% assign subtitle = attachment.subtitle %}
+{% else %}
+  {% assign subtitle = title %}
+{% endif %}
+
+{% if attachment.btn-class %}
+  {% assign class = attachment.btn-class %}
+{% endif %}
+
+{% if attachment.target %}
+  {% assign target = attachment.target %}
+{% endif %}
+
+<a href="{{ href }}" class="{{ class }}" target="_blank" title="{{ subtitle }}">
+  <i class="{{ icon }}"></i> {{ title }}
+</a>

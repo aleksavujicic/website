@@ -5,7 +5,7 @@ excerpt: "A report written for the mathematics honours course. Covers the statem
 
 date: 2017-10-24
 
-files:
+attachments:
   - title: Notes
-    url: 'picard-riemann.pdf'
+    file: 'picard-riemann.pdf'
 ---

@@ -31,26 +31,9 @@
       {% endif %}
 
       <div class="item-buttons">
-        {% if post.slides %}
-          <a href="/files/{{ post.slides }}" class="btn btn-outline-primary" target="_blank" title="Slides">
-            <i class="fa fa-download"></i> Slides
-          </a>
-        {% endif %}
-        {% for file in post.files %}
-          <a href="/files/{{ file.url }}" class="btn btn-outline-primary" target="_blank" title="{{ file.title }}">
-            <i class="fa fa-download"></i> {{ file.title }}
-          </a>
+        {% for attachment in post.attachments %}
+          {% include attachment-button.html attachment=attachment %}
         {% endfor %}
-        {% if post.conference-website %}
-          <a href="{{ post.conference-website }}" class="btn btn-outline-primary" target="_blank" title="Conference website">
-            <i class="fa fa-external-link"></i> Website
-          </a>
-        {% endif %}
-        {% if post.publish-link %}
-          <a href="{{ post.publish-link }}" class="btn btn-outline-primary" target="_blank" title="Article">
-            <i class="fa fa-external-link"></i> Article
-          </a>
-        {% endif %}
         {% if post.link %}
           <a href="{{ post.link }}">{{ post.title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
         {% else %}
