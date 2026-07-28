@@ -24,25 +24,39 @@ collections:
     return-title: "Talks"
     return-url: /talks/
 
+# navbar:
+#   - title: "Home"
+#     url: /
+#     url-test: exact
+#   - type: submenu
+#     title: "Mathematics"
+#     content:
+#       - title: "Publications"
+#         url: /publications/
+#       - title: "Talks"
+#         url: /talks/
+#         url-test: multi
+#         url-match: /talks/|/seminars/
+#       - title: "Teaching"
+#         url: /teaching/
+#       - title: "Personal Notes"
+#         url: /notes/
+#   - title: "Miscellany"
+#     url: /other/
+
 navbar:
   - title: "Home"
     url: /
     url-test: exact
-  - type: submenu
-    title: "Mathematics"
-    content:
-      - title: "Publications"
-        url: /publications/
-      - title: "Talks"
-        url: /talks/
-        url-test: multi
-        url-match: /talks/|/seminars/
-      - title: "Teaching"
-        url: /teaching/
-      - title: "Personal Notes"
-        url: /notes/
-      - title: "Personal Notes"
-        url: /notes/
+  - title: "Publications"
+    url: /publications/
+  - title: "Talks"
+    url: /talks/
+    url-test: multi
+    url-match: /talks/|/seminars/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Personal Notes"
+    url: /notes/
   - title: "Miscellany"
     url: /other/
-
