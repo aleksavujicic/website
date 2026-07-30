@@ -1,4 +1,12 @@
 .content {
   margin: 3px;
   padding: 20px;
+
+  h1.content-header {
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+  h2.content-header {
+    margin-left: 20px;
+  }
 }
