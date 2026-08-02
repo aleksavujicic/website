@@ -1,7 +1,7 @@
 .sidebar {
     position: fixed;
     width: inherit;
-    margin: 10px;
+    margin-top: 10px;
     padding: 10px;
 
     border: 2px solid var(--bs-border-color);
@@ -10,7 +10,6 @@
 
     background: var(--bs-secondary-bg);
 }
-
 .author__avatar {
     vertical-align: top;
 
