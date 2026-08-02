@@ -2,11 +2,16 @@
 <div class="accordion-item">
   <h2 class="accordion-header" id="heading{{ slug }}">
     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ slug }}" aria-expanded="false" aria-controls="collapse{{ slug }}">
-      {{ post.title }}
+      <div class="accordion-item-title">
+        {{ post.title }}
+      </div>
 
       {% if post.date %}
-        <div class="accordion-date">
+        <div class="accordion-date d-none d-sm-block">
           <i class="fa-regular fa-calendar" aria-hidden="true"></i> {{ post.date | date: '%d %b %Y' }}
+        </div>
+        <div class="accordion-date d-block d-sm-none">
+          <i class="fa-regular fa-calendar" aria-hidden="true"></i> {{ post.date | date: '%m/%y' }}
         </div>
       {% endif %}
     </button>
