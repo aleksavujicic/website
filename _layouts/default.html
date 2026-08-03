@@ -4,24 +4,26 @@
     {% include header.html %}
   </head>
   <body>
-    {% include navbar.html %}
+    <div id="content-wrap">
+      {% include navbar.html %}
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-2 d-none d-sm-block">
-          <div class="sidebar">
-            {% include sidebar.html %}
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-2 d-none d-sm-block">
+             {% include sidebar.html %}
           </div>
-        </div>
 
-        <div class="col">
-          <div class="content">
-            {{ content }}
+          <div class="col">
+            <div class="content">
+              {{ content }}
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-1 col-lg-2 col-xl-3"></div>
+          <div class="col-md-1 col-lg-2 col-xl-3"></div>
+        </div>
       </div>
+
+      {% include footer.html %}
     </div>
 
     {% include bootstrap.html %}

@@ -27,6 +27,7 @@ SOFTWARE.
 
 {% assign author = site.data.author %}
 
+<div class="sidebar">
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
@@ -187,3 +188,4 @@ SOFTWARE.
       {% endif %}
     </ul>
   </div>
+</div>
