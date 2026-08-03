@@ -1,6 +1,9 @@
 .sidebar {
     position: fixed;
     width: inherit;
+    max-height: 65%;
+    overflow: auto;
+
     margin-top: 10px;
     padding: 10px;
 
