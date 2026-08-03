@@ -33,7 +33,7 @@ layout: default
 
       {% if page.abstract %}
         <h3>Abstract</h3>
-        {{ page.abstract }}
+        {{ page.abstract | markdownify }}
       {% endif %}
 
 
