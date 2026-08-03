@@ -13,6 +13,20 @@ attachments:
     title: UW Space
     url: https://hdl.handle.net/10012/22593
 
+citation:
+  bibtex: |
+    @article{vujicic2025,
+      title = {Fourier Analysis of Local Fell Groups},
+      author = {Vuji{\\v c}i{\\'c}, Aleksa},
+      year = 2025,
+      month = oct,
+      eprint = {10012/22593},
+      eprinttype = {hdl},
+      publisher = {University of Waterloo},
+      url = {https://hdl.handle.net/10012/22593},
+      urldate = {2025-10-18},
+    }
+
 abstract: |
   In 1972, Bagget showed that a separable locally compact group \(G\) is compact if and only if its dual space \(\widehat{G}\) is discrete.
   Curiously however, there are non-discrete groups whose duals are compact, and such a group was identified in the same paper.
@@ -40,3 +54,4 @@ abstract: |
 ---
 
 {{ page.excerpt }}
+

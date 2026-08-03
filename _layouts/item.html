@@ -25,6 +25,7 @@ layout: default
       {% elsif page.date %}
         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
       {% endif %}
+
     </header>
 
     <section class="page__content" itemprop="text">
@@ -35,11 +36,25 @@ layout: default
         {{ page.abstract }}
       {% endif %}
 
-      {% if page.citation %}
-        <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
-      {% endif %}
 
       <div class="item-buttons">
+        {% if page.citation %}
+          <span class="dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-book-open"></i> Cite
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" onclick="updateClipboard();">BibTeX</a>
+              </li>
+            </ul>
+          </span>
+          {% comment %}
+          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+            Popover on top
+          </button>
+          {% endcomment %}
+        {% endif %}
         {% for attachment in page.attachments %}
           {% include attachment-button.html attachment=attachment %}
         {% endfor %}
@@ -50,3 +65,18 @@ layout: default
     </section>
   </div>
 </article>
+
+<script type="text/javascript">
+
+function updateClipboard(newClip) {
+  newClip = `{{ page.citation.bibtex }}`;
+  navigator.clipboard.writeText(newClip).then(
+    () => {
+      /* clipboard successfully set */
+    },
+    () => {
+      /* clipboard write failed */
+    },
+  );
+}
+</script>
