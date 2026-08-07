@@ -1,0 +1,73 @@
+{% assign post = include.post %}
+
+{% assign card_titles = '' | split: '' %}
+{% assign card_pages = '' | split: '' %}
+{% assign card_slugs = '' | split: '' %}
+
+{% if post.abstract %}
+  {% assign md_abs = post.abstract | markdownify %}
+  {% assign card_pages = card_pages | push: md_abs %}
+  {% assign card_titles = card_titles | push: "Abstract" %}
+  {% assign card_slugs = card_slugs | push: "abstract" %}
+{% endif %}
+
+{% if post.citation %}
+  {% capture cite_html %}
+    {% include item/citation.html citation=post.citation %}
+  {% endcapture %}
+  {% assign card_pages = card_pages  | push: cite_html %}
+  {% assign card_titles = card_titles | push: "Cite" %}
+  {% assign card_slugs = card_slugs| push: "cite" %}
+{% endif %}
+
+{% assign length = card_slugs | size %}
+{% assign looplen = length | minus: 1 %}
+
+{% case length %}
+  {% when 0 %}
+  {% when 1 %}
+    <div class="card" id="item-main-card">
+      <div class="card-header">
+        <h5 class="my-1 card-title">{{ card_titles[0] }}</h5>
+      </div>
+      <div class="card-body">
+        {{ card_pages[0] }}
+      </div>
+    </div>
+  {% else %}
+    <div class="card" id="item-main-card">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" role="tablist">
+          {% for i in (0..looplen) %}
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link {% if i == 0 %}active{% endif %}"
+                id="{{ card_slugs[i] }}-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#{{ card_slugs[i] }}-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="{{ card_slugs[i] }}-tab-pane"
+                aria-selected="{% if i == 0 %}true{% else %}false{% endif %}">
+                  {{ card_titles[i] }}
+                </button>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="card-body">
+        <div class="tab-content">
+          {% for i in (0..looplen) %}
+            <div
+              class="tab-pane fade{% if i == 0 %} show active{% endif %}"
+              id="{{ card_slugs[i] }}-tab-pane"
+              role="tabpanel"
+              aria-labelledby="{{ card_slugs[i] }}-tab"
+              tabindex="{{ i }}">
+              {{ card_pages[i] }}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+{% endcase %}

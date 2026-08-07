@@ -37,37 +37,7 @@ layout: default
         {% endfor %}
       </div>
 
-
-      <div class="card" id="item-card">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-            {% if page.abstract %}
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Abstract</button>
-              </li>
-            {% endif %}
-            {% if page.citation %}
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Cite</button>
-              </li>
-            {% endif %}
-          </ul>
-        </div>
-        <div class="card-body">
-          <div class="tab-content" id="myTabContent">
-            {% if page.abstract %}
-              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                {{ page.abstract | markdownify }}
-              </div>
-            {% endif %}
-            {% if page.citation %}
-              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                {% include item/citation.html citation=page.citation %}
-              </div>
-            {% endif %}
-          </div>
-        </div>
-      </div>
+      {% include item/main-card.html post=page %}
 
 
       <a class="btn btn-outline-secondary" href="{{ base_path }}{{ collection.return-url }}">
