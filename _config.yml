@@ -60,3 +60,7 @@ exclude:
   - README
   - tmp
   - vendor
+
+
+sass:
+  quiet_deps: true

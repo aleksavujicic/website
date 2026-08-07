@@ -1,0 +1,32 @@
+.code-block {
+  position: relative;
+
+  .code-buttons {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    margin: 4px 4px 0 0;
+
+    flex-direction: row-reverse;
+
+    .code-button {
+      background-color: transparent;
+      border: none;
+      color: #858585;
+
+      :hover {
+        color: #5c5c5c;
+      }
+    }
+  }
+
+  pre {
+    padding: 5px;
+
+    border: 2px solid var(--bs-border-color);
+
+    background: var(--bs-body-secondary-bg);
+    margin-bottom: 0;
+  }
+}

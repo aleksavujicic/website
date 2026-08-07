@@ -1,0 +1,26 @@
+{% assign citation = include.citation %}
+
+<div class="mb-3">
+  <h3>BibTeX</h3>
+  <div class="code-block">
+    {% highlight bibtex %}{{ citation.bibtex | strip }}{% endhighlight %}
+    <div class="code-buttons">
+      <button class="code-button code-copy" data-bs-container="body" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Copy to clipboard">
+        <i class="fa-regular fa-clipboard"></i>
+      </button>
+      <button class="code-button code-copy-confirm d-none" data-bs-container="body" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Copied!">
+        <i class="fa-solid fa-check"></i>
+      </button>
+      {% if citation.bibfile %}
+        <a class="code-button" data-bs-container="body" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Download .bib file" href="/files/bib/{{ citation.bibfile }}" download>
+          <i class="fa-solid fa-download"></i>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+
+</script>

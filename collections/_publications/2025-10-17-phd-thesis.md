@@ -14,6 +14,7 @@ attachments:
     url: https://hdl.handle.net/10012/22593
 
 citation:
+  bibfile: vujicic2025.bib
   bibtex: |
     @article{vujicic2025,
       title = {Fourier Analysis of Local Fell Groups},
