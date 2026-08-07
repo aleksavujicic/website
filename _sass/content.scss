@@ -17,6 +17,13 @@
   flex-direction: column;
 }
 
+.item-main-card {
+  margin: 1.5rem 0;
+}
+
+
+// ---- Footer ----
+
 .footer {
     margin-top: auto;
     font-size: small;
@@ -27,6 +34,3 @@
   transform: translate(-6px, -1px);
 }
 
-#item-main-card {
-  margin: 1.5rem 0;
-}

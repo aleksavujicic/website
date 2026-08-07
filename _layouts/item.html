@@ -31,14 +31,8 @@ layout: default
     <section class="page__content" itemprop="text">
       {{ content }}
 
-      <div class="item-buttons">
-        {% for attachment in page.attachments %}
-          {% include attachment-button.html attachment=attachment %}
-        {% endfor %}
-      </div>
-
+      {% include item/attachment-buttons.html post=page %}
       {% include item/main-card.html post=page %}
-
 
       <a class="btn btn-outline-secondary" href="{{ base_path }}{{ collection.return-url }}">
         <i class="fa-solid fa-caret-left"></i> Return to {{ collection.return-title }}

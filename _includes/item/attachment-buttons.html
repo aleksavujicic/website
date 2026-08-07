@@ -1,0 +1,11 @@
+{% assign post = include.post %}
+
+<div class="item-buttons">
+  {% for attachment in post.attachments %}
+    {% include item/attachment-button.html attachment=attachment %}
+  {% endfor %}
+
+  {% if include.link_page %}
+    <a href="{{ base_path }}{{ post.url }}" class="btn btn-link" rel="permalink">See More...</a>
+  {% endif %}
+</div>
