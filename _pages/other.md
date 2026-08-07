@@ -26,3 +26,7 @@ author_profile: true
   - Excerpts for talks
   - Other page
 - Page for CV / Dossier / Statements(?)
+- Update sidebar and item pages to remove old classes
+- Change "Homepage" title on navbar
+- Something I forgot?
+- Pet pictures?
