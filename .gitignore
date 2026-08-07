@@ -8,5 +8,5 @@ _site/
 Gemfile.lock
 
 # Ignore the vendor file at root level and bundle for alternative installation
-vendor/
+/vendor/
 .bundle/
