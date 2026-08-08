@@ -1,0 +1,9 @@
+{% assign post = include.post %}
+{% assign pretty_date = post.date | date: '%d %b %Y' %}
+<div class="item-meta">
+  {% include item/metaentry.html content=pretty_date      fa_class="fa fa-calendar"       description="Date"       %}
+  {% include item/metaentry.html content=post.conference  fa_class="fa fa-graduation-cap" description="Conference" %}
+  {% include item/metaentry.html content=post.venue       fa_class="fa fa-landmark"       description="Venue"      %}
+  {% include item/metaentry.html content=post.location    fa_class="fa fa-location-dot"   description="Location"   %}
+  {% include item/metaentry.html content=post.publisher   fa_class="fa fa-book"           description="Publisher"  %}
+</div>

@@ -1,0 +1,7 @@
+{% if include.content %}
+  <strong>
+    <i class="{{ include.fa_class }}"></i>
+    <span class="d-none d-md-inline">{{ include.description }}:</span>
+  </strong>
+  {{ include.content }}<br/>
+{% endif %}

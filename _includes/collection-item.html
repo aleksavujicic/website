@@ -20,20 +20,7 @@
     <div class="accordion-item-content">
       {% if post.excerpt %}<p class="">{{ post.excerpt  }}</p>{% endif %}
 
-
-      {% if post.conference %}
-        <p class="item-conference">
-          <i class="fa fa-graduation-cap"></i>{{ post.conference }}<br/>
-          <i class="fa fa-landmark"></i>{{ post.venue }}<br/>
-          <i class="fa fa-location-dot"></i>{{ post.location }}
-        </p>
-      {% endif %}
-
-      {% if post.publisher %}
-        <p class="item-publisher">
-          <i class="fa fa-book"></i>{{ post.publisher }}<br/>
-        </p>
-      {% endif %}
+      {% include item/metadata.html post=post %}
 
       {% include item/attachment-buttons.html post=page link_page=true %}
     </div>
