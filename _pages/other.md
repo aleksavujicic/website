@@ -14,9 +14,9 @@ author_profile: true
 # My Todo List
 - Fix item pages:
   - Styling and spacing
-- Consistent metadata format on both collection and item pages
-- Improve citation button
-  - Support for bibtex 
+- <del>Consistent metadata format on both collection and item pages</del>
+- <del>Improve citation button</del>
+  - <del>Support for bibtex</del>
 - Double check bibtex formats
 - Excerpts are missing on some pages
 - Fill in missing content:
