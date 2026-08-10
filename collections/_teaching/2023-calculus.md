@@ -1,7 +1,7 @@
 ---
 title: "MATH237 - Calculus 3"
-collection: teaching
-type: "Undergraduate course"
+category: course
+
 venue: "University of Waterloo"
 date: 2023-08-01
 location: "Waterloo, ON, Canada"
