@@ -6,6 +6,7 @@ excerpt: Paper published as a result of my Master's work.
 date: 2021-08-30
 publisher: Studia Mathematica
 
+file: characterisations-of-pseudo-amenability.pdf
 attachments:
   - title: Preprint
     file: characterisations-of-pseudo-amenability.pdf

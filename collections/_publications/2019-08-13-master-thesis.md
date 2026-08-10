@@ -6,6 +6,7 @@ excerpt: Master's Thesis completed under the supervision of Hung Le Pham.
 date: 2019-08-13
 publisher: Victoria University of Wellington
 
+file: masters-thesis.pdf
 attachments:
   - title: Thesis
     file: masters-thesis.pdf

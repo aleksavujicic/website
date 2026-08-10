@@ -11,13 +11,23 @@
   {% assign card_slugs = card_slugs | push: "abstract" %}
 {% endif %}
 
+{% if post.file %}
+  {% assign url = "/files/" | append: post.file %}
+  {% capture pdf_html %}
+    {% include pdf-view.html file=url title=post.title %}
+  {% endcapture %}
+  {% assign card_pages = card_pages  | push: pdf_html %}
+  {% assign card_titles = card_titles | push: "Preview" %}
+  {% assign card_slugs = card_slugs | push: "preview" %}
+{% endif %}
+
 {% if post.citation %}
   {% capture cite_html %}
     {% include item/citation.html citation=post.citation %}
   {% endcapture %}
   {% assign card_pages = card_pages  | push: cite_html %}
   {% assign card_titles = card_titles | push: "Cite" %}
-  {% assign card_slugs = card_slugs| push: "cite" %}
+  {% assign card_slugs = card_slugs | push: "cite" %}
 {% endif %}
 
 {% assign length = card_slugs | size %}

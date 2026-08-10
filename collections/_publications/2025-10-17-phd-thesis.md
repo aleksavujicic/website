@@ -6,6 +6,7 @@ excerpt: PhD Thesis completed under the supervision of Nico Spronk.
 date: 2025-10-17
 publisher: University of Waterloo
 
+file: phd-thesis.pdf
 attachments:
   - title: Thesis
     file: phd-thesis.pdf

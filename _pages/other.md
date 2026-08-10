@@ -19,6 +19,8 @@ author_profile: true
   - <del>Support for bibtex</del>
 - Double check bibtex formats
 - Excerpts are missing on some pages
+- Fix date formats for long duration items such as teaching
+- Check use of relative urls
 - Fill in missing content:
   - Homepage
   - Learning seminars
