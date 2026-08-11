@@ -16,9 +16,6 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  seminars:
-    output: true
-    permalink: /:collection/:path/
 
 
 defaults:

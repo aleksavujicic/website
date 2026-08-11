@@ -7,8 +7,8 @@ author_profile: true
 
 ## Invited Talks
 {: .content-header}
-{% include collection-accordion.html collection="talks" %}
+{% include accordion.html collection="talks" category="talk" %}
 
 ## Learning Seminar Talks
 {: .content-header}
-{% include collection-accordion.html collection="seminars" %}
+{% include accordion.html collection="talks" category="seminar" %}

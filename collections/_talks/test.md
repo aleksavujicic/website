@@ -1,6 +1,6 @@
 ---
 title: The Problem with Braid
-category: talk
+category: seminar
 excerpt: TODO
 
 date: 2022-07-22

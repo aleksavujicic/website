@@ -5,4 +5,4 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% include collection-accordion.html collection="publications" %}
+{% include accordion.html collection="publications" %}

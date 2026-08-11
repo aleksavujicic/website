@@ -1,0 +1,11 @@
+{% assign accordion_id = include.collection %}
+{% assign posts = site[include.collection] | reverse %}
+{% assign category = include.category | default: "" %}
+
+<div class="accordion" id="{{ accordion_id }}">
+  {% for post in posts %}
+    {% if post.category == category or category == "" %}
+      {% include accordion-item.html %}
+    {% endif %}
+  {% endfor %}
+</div>
