@@ -17,7 +17,7 @@ author_profile: true
 - <del>Consistent metadata format on both collection and item pages</del>
 - <del>Improve citation button</del>
   - <del>Support for bibtex</del>
-- Double check bibtex formats
+- <del>Double check bibtex formats</del>
 - Excerpts are missing on some pages
 - Fix date formats for long duration items such as teaching
 - <del>Check use of relative urls</del>

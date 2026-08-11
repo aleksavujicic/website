@@ -15,14 +15,15 @@ attachments:
     url: https://doi.org/10.4064/sm200704-20-1
 
 citation:
+  bibfile: vujicic2022.bib
   bibtex: |
     @article{vujicic2022,
-      author = "Vuji{\\v c}i{\\'c}, Aleksa",
-      title = "{Characterisations of Pseudo-Amenability}",
+      author = "Vuji{\v c}i{\'c}, Aleksa",
+      title = "Characterisations of Pseudo-Amenability",
       year = 2022,
-      month = "8",
       journal = {Studia Mathematica},
       volume = {262},
+      number = 2,
       pages = {183--195},
       publisher = {Instytut Matematyczny Polskiej Akademii Nauk},
       issn = {0039-3223, 1730-6337},

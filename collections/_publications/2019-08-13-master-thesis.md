@@ -15,12 +15,14 @@ attachments:
     url: https://doi.org/10.26686/wgtn.17136611
 
 citation:
+  bibfile: vujicic2019.bib
   bibtex: |
-    @article{vujicic2019,
-      author = "Vuji{\\v c}i{\\'c}, Aleksa",
+    @mastersthesis{vujicic2019,
+      author = "Vuji{\v c}i{\'c}, Aleksa",
       title = "{Characterisations of Pseudo-Amenability}",
-      year = "2019",
-      month = "1",
+      school = "Victoria University of Wellington",
+      year = 2019,
+      month = jan,
       url = "https://openaccess.wgtn.ac.nz/articles/thesis/Characterisations_of_Pseudo-Amenability/17136611",
       doi = "10.26686/wgtn.17136611"
     }
