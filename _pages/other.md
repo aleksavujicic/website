@@ -20,7 +20,7 @@ author_profile: true
 - Double check bibtex formats
 - Excerpts are missing on some pages
 - Fix date formats for long duration items such as teaching
-- Check use of relative urls
+- <del>Check use of relative urls</del>
 - Fill in missing content:
   - Homepage
   - Learning seminars
@@ -29,6 +29,6 @@ author_profile: true
   - Other page
 - Page for CV / Dossier / Statements(?)
 - Update sidebar and item pages to remove old classes
-- Change "Homepage" title on navbar
+- <del>Change "Homepage" title on navbar</del>
 - Something I forgot?
 - Pet pictures?
