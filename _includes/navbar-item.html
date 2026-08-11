@@ -17,7 +17,7 @@
           {% capture sub_a_class %}
             {% include navbar-item-active.html item=subitem %}
           {% endcapture %}
-          <li><a class="dropdown-item {{ sub_a_class }}" href="{{ base_path }}{{ subitem.url }}">{{ subitem.title }}</a></li>
+          <li><a class="dropdown-item {{ sub_a_class }}" href="{{ subitem.url }}">{{ subitem.title }}</a></li>
         {% endfor %}
       </ul>
     </li>
@@ -26,7 +26,7 @@
       {% include navbar-item-active.html item=navitem %}
     {% endcapture %}
     <li class="nav-item">
-      <a class="nav-link {{ a_class }}" href="{{ base_path }}{{ navitem.url }}">{{ navitem.title }}</a>
+      <a class="nav-link {{ a_class }}" href="{{ navitem.url }}">{{ navitem.title }}</a>
     </li>
 {% endcase %}
 
