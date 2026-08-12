@@ -20,9 +20,6 @@ collections:
   notes:
     return-title: "Notes"
     return-url: /notes/
-  seminars:
-    return-title: "Talks"
-    return-url: /talks/
 
 # navbar:
 #   - title: "Home"
@@ -52,8 +49,6 @@ navbar:
     url: /publications/
   - title: "Talks"
     url: /talks/
-    url-test: multi
-    url-match: /talks/|/seminars/
   - title: "Teaching"
     url: /teaching/
   - title: "Personal Notes"
