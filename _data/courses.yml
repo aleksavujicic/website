@@ -1,0 +1,66 @@
+# List of courses that I've TAd for easy display
+# Courses:
+#   - W22: MATH135, MATH235
+#   - S22: (Math136 Instructor)
+#   - F22: MATH115, Tutorial Centre
+#   - W23: PMATH451/651 (1.5 TA), PMATH810 (0.5TA)
+#   - S23: MATH245
+#   - F23: (Math237 Instructor)
+#   - W24: Tutorial Centre, MATH148
+#   - S24: Tutorial Centre
+#   - F24: MATH685, PMATH330
+#   - W25: MATH648 Tutorial Centre
+#   - S25: MATH640, Tutorial Centre
+#   - F25: MATH600 (0.5TA) MATH692(1TA) MATH115
+
+
+uw:
+  semesters:
+    winter:
+      name: Winter
+      start: 01-01
+      end: 30-04
+    spring:
+      name: Spring
+      start: 01-05
+      end: 31-08
+    fall:
+      name: Fall
+      start: 01-09
+      end: 31-12
+
+  courses:
+    math135:
+      code: MATH135
+      title: Algebra for Honours Mathematics
+    math136i:
+      code: MATH136
+      title: Linear Algebra 1 for Honours Mathematics
+      teach-link: 2022-linear-algebra
+    math235:
+      code: MATH135
+      title: Linear Algebra 2 for Honours Mathematics
+    tut:
+      code: Tutorial Centre
+      title: Tutorial Centre
+
+  teaching:
+    - course: math135
+      semester: winter, 2022
+    - course: math235
+      semester: winter, 2022
+    - course: math136i
+      semester: spring, 2022
+    - course: math115
+      semester: fall, 2022
+    - course: tut
+      semester: fall, 2022
+    - course: pmath451
+      semester: winter, 2023
+      load: 1.5
+    - course: pmath810
+      semester: winter, 2023
+      load: 1.5
+
+
+vuw:
