@@ -22,3 +22,5 @@ Courses:
   - W25: MATH648 Tutorial Centre
   - S25: MATH640, Tutorial Centre
   - F25: MATH600 (0.5TA) MATH692(1TA) MATH115
+
+{% include teaching-list.html uni=site.data.courses.uw %}

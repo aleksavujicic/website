@@ -30,26 +30,62 @@ uw:
       end: 31-12
 
   courses:
+    math115:
+      code: MATH115
+      title:
     math135:
       code: MATH135
       title: Algebra for Honours Mathematics
-    math136i:
+    math136:
       code: MATH136
       title: Linear Algebra 1 for Honours Mathematics
-      teach-link: 2022-linear-algebra
+    math148:
+      code: MATH148
+      title:
     math235:
-      code: MATH135
+      code: MATH235
       title: Linear Algebra 2 for Honours Mathematics
+    math237:
+      code: MATH237
+      title:
+    math245:
+      code: MATH245
+      title:
+    math600:
+      code: MATH600
+      title:
+    math640:
+      code: MATH640
+      title:
+    math648:
+      code: MATH648
+      title:
+    math685:
+      code: MATH685
+      title:
+    math692:
+      code: MATH692
+      title:
+    pmath330:
+      code: PMATH330
+      title:
+    pmath451:
+      code: PMATH451
+      title:
+    pmath810:
+      code: PMATH810
+      title:
     tut:
       title: Tutorial Centre
 
-  teaching:
+  teachings:
     - course: math135
       semester: winter, 2022
     - course: math235
       semester: winter, 2022
-    - course: math136i
+    - course: math136
       semester: spring, 2022
+      teach-link: 2022-linear-algebra
     - course: math115
       semester: fall, 2022
     - course: tut
@@ -61,5 +97,8 @@ uw:
       semester: winter, 2023
       load: 1.5
 
+    - course: math237
+      semester: fall, 2023
+      teach-link: 2023-calculus
 
 vuw:

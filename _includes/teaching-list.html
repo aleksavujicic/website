@@ -1,0 +1,18 @@
+{% assign uni = include.uni %}
+
+{% assign semesters = uni.semesters %}
+{% assign courses = uni.courses %}
+{% assign teachings = uni.teachings %}
+
+{% for teaching in teachings %}
+  {% assign course = courses[teaching.course] %}
+
+  {% assign semester_data = teaching.semester | split: "," %}
+  {% assign semester_code = semester_data[0] | strip %}
+  {% assign semester = semesters[semester_code] %}
+  {% assign year = semester_data[1] | strip %}
+
+  {{ course | inspect }}
+  {{ semester | inspect }}
+  {{ year }}
+{% endfor %}
