@@ -1,18 +1,9 @@
-{% assign uni = include.uni %}
+{% assign uni_data = include.uni_data %}
+{% assign teachings = uni_data.teachings %}
 
-{% assign semesters = uni.semesters %}
-{% assign courses = uni.courses %}
-{% assign teachings = uni.teachings %}
+<div class="list-group course-list">
+  {% for teaching in teachings %}
 
-{% for teaching in teachings %}
-  {% assign course = courses[teaching.course] %}
-
-  {% assign semester_data = teaching.semester | split: "," %}
-  {% assign semester_code = semester_data[0] | strip %}
-  {% assign semester = semesters[semester_code] %}
-  {% assign year = semester_data[1] | strip %}
-
-  {{ course | inspect }}
-  {{ semester | inspect }}
-  {{ year }}
-{% endfor %}
+    {% include teaching-single.html uni_data=uni_data teaching=teaching %}
+  {% endfor %}
+</div>

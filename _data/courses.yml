@@ -1,19 +1,3 @@
-# List of courses that I've TAd for easy display
-# Courses:
-#   - W22: MATH135, MATH235
-#   - S22: (Math136 Instructor)
-#   - F22: MATH115, Tutorial Centre
-#   - W23: PMATH451/651 (1.5 TA), PMATH810 (0.5TA)
-#   - S23: MATH245
-#   - F23: (Math237 Instructor)
-#   - W24: Tutorial Centre, MATH148
-#   - S24: Tutorial Centre
-#   - F24: MATH685, PMATH330
-#   - W25: MATH648 Tutorial Centre
-#   - S25: MATH640, Tutorial Centre
-#   - F25: MATH600 (0.5TA) MATH692(1TA) MATH115
-
-
 uw:
   semesters:
     winter:
@@ -32,7 +16,7 @@ uw:
   courses:
     math115:
       code: MATH115
-      title:
+      title: Linear Algebra for Engineering
     math135:
       code: MATH135
       title: Algebra for Honours Mathematics
@@ -41,64 +25,91 @@ uw:
       title: Linear Algebra 1 for Honours Mathematics
     math148:
       code: MATH148
-      title:
+      title: Calculus 2 (Advanced Level)
     math235:
       code: MATH235
       title: Linear Algebra 2 for Honours Mathematics
     math237:
       code: MATH237
-      title:
+      title: Calculus 3 for Honours Mathematics
     math245:
       code: MATH245
-      title:
+      title: Linear Algebra 2 (Advanced Level)
     math600:
       code: MATH600
-      title:
+      title: Introduction to Mathematical Software for Teachers
     math640:
       code: MATH640
-      title:
+      title: Number Theory for Teachers
     math648:
       code: MATH648
-      title:
+      title: Foundations of Calculus II
     math685:
       code: MATH685
-      title:
+      title: Math and Peace for Teachers
     math692:
       code: MATH692
-      title:
+      title: Reading, Writing and Discovering Proofs
     pmath330:
       code: PMATH330
-      title:
+      title: Introduction to Mathematical Logic
     pmath451:
-      code: PMATH451
-      title:
+      code: PMATH451/651
+      title: Measure and Integration
     pmath810:
       code: PMATH810
-      title:
+      title: Banach Algebras and Operator Theory
     tut:
-      title: Tutorial Centre
+      code: Tutorial Centre
 
   teachings:
-    - course: math135
-      semester: winter, 2022
-    - course: math235
-      semester: winter, 2022
-    - course: math136
-      semester: spring, 2022
-      teach-link: 2022-linear-algebra
     - course: math115
-      semester: fall, 2022
+      semester: fall, 2025
+    - course: math600
+      semester: fall, 2025
+      load: 0.5
+    - course: math692
+      semester: fall, 2025
+    - course: math640
+      semester: spring, 2025
     - course: tut
-      semester: fall, 2022
+      semester: spring, 2025
+    - course: math648
+      semester: winter, 2025
+    - course: tut
+      semester: winter, 2025
+    - course: math685
+      semester: fall, 2024
+    - course: pmath330
+      semester: fall, 2024
+    - course: tut
+      semester: spring, 2024
+    - course: math148
+      semester: winter, 2024
+    - course: tut
+      semester: winter, 2024
+    - course: math237
+      semester: fall, 2023
+      teach-link: 2023-calculus
+    - course: math245
+      semester: spring, 2023
     - course: pmath451
       semester: winter, 2023
       load: 1.5
     - course: pmath810
       semester: winter, 2023
-      load: 1.5
+      load: 0.5
+    - course: math115
+      semester: fall, 2022
+    - course: tut
+      semester: fall, 2022
+    - course: math136
+      semester: spring, 2022
+      teach-link: 2022-linear-algebra
+    - course: math135
+      semester: winter, 2022
+    - course: math235
+      semester: winter, 2022
 
-    - course: math237
-      semester: fall, 2023
-      teach-link: 2023-calculus
 
 vuw:

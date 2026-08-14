@@ -1,5 +1,30 @@
+{% assign uni_data = include.uni_data %}
 {% assign teaching = include.teaching %}
-{% assign course = include.course %}
-{% assign semester = include.semester %}
-{% assign year = include.year %}
 
+{% assign course = uni_data.courses[teaching.course] %}
+{% assign semester_data = teaching.semester | split: "," %}
+{% assign semester_code = semester_data[0] | strip %}
+{% assign semester = uni_data.semesters[semester_code] %}
+{% assign year = semester_data[1] | strip %}
+
+{% assign semester_start = semester.start | append: "-" | append: year %}
+{% assign semester_end = semester.end | append: "-" | append: year %}
+{% assign date_format = "%d %b %Y" %}
+
+<label class="list-group-item course">
+  <div>
+    <span class="course-code">{{ course.code }}</span>
+    {% if course.title %}
+      <span class="course-title">{{ course.title }}</span>
+    {% endif %}
+    {% if teaching.load %}
+      <span class="course-load">({{ teaching.load }} TA units)</span>
+    {% endif %}
+    {% if teaching.teach-link %}
+      <small class="course-bonus d-block text-body-secondary">Lecturer, <a href="/teaching/{{ teaching.teach-link }}">details...</a></small>
+    {% endif %}
+  </div>
+  <div class="course-semester">
+    <abbr title="{{ semester_start | date: date_format }} to {{ semester_end | date: date_format }}">{{ semester.name }}, {{ year }}</abbr>
+  </div>
+</label>
