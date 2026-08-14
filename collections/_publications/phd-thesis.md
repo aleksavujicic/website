@@ -1,7 +1,7 @@
 ---
 title: Fourier Analysis of Local Fell Groups (Thesis)
 category: thesis
-excerpt: PhD Thesis completed under the supervision of Nico Spronk.
+excerpt: PhD thesis completed under the supervision of Nico Spronk.
 
 date: 2025-10-17
 publisher: University of Waterloo

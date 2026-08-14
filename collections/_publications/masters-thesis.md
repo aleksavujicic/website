@@ -2,7 +2,7 @@
 title: Characterisations of Pseudo-amenability (Thesis)
 category: thesis
 
-excerpt: Master's Thesis completed under the supervision of Hung Le Pham.
+excerpt: Master's thesis completed under the supervision of Hung Le Pham.
 date: 2019-08-13
 publisher: Victoria University of Wellington
 
