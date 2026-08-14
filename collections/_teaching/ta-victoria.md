@@ -9,3 +9,5 @@ location: "Wellington, New Zealand"
 
 Courses I did:
 - I should figure this out.
+
+{% include teaching-list.html uni_data=site.data.courses.vuw %}

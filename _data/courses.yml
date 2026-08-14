@@ -113,3 +113,35 @@ uw:
 
 
 vuw:
+  semesters:
+    t1:
+      name: Trimester 1
+      start:
+      end:
+    t2:
+      name: Trimester 2
+      start:
+      end:
+    t3:
+      name: Trimester 3
+      start:
+      end:
+
+  courses:
+    engr121:
+      code: ENGR121
+      title: Engineering Mathematics Foundations
+    math309:
+      code: MATH309
+      title: Mathematical Logic
+    math324:
+      code: MATH324
+      title: Coding and Cryptography
+
+  teachings:
+    - course: engr121
+      semester: t1, 2015
+    - course: math309
+      semester: t2, 2019
+    - course: math324
+      semester: t2, 2019
