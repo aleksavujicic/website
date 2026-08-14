@@ -7,6 +7,8 @@ date: 2022-01-01
 location: "Waterloo, ON, Canada"
 ---
 
+{% include test-course.html %}
+
 Courses:
   - W22: MATH135, MATH235
   - S22: (Math136 Instructor)
