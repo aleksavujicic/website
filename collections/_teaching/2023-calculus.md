@@ -7,13 +7,8 @@ date: 2023-08-01
 location: "Waterloo, ON, Canada"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+I taught a second-year course on multivariable calculus. From the university [courses page](https://ucalendar.uwaterloo.ca/2223/COURSE/course-MATH.html):
+> Calculus of functions of several variables. Limits, continuity, differentiability, the chain rule. The gradient vector and the directional derivative. Taylor's formula. Optimization problems. Mappings and the Jacobian. Multiple integrals in various co-ordinate systems.
 
-Heading 1
-======
 
-Heading 2
-======
-
-Heading 3
-======
+More details to come...

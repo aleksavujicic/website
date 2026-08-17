@@ -1,22 +1,18 @@
 ---
 layout: default
 permalink: /
-title: "Happy Jekylling!"
+title: "Home"
 ---
 
-## You're ready to go!
+## Welcome
 
-Start developing your Jekyll website.
+Hi! I'm Aleksa, a recent PhD graduate in mathematics. As you can see by this rather empty homepage, this website is still in development: so please bear with me if things are missing or incomplete!
 
-## Lorem Ipsum
 
-Euismod tellus viverra montes penatibus dolor nunc consequat scelerisque faucibus maecenas. Nibh pharetra elementum faucibus ipsum sociis facilisis natoque dolor dis. Ac nostra leo vehicula auctor accumsan tincidunt. Iaculis vehicula pretium sem urna lobortis a sociis varius id. Elit eu porta interdum, non primis suscipit porttitor. Iaculis nunc odio erat sociosqu at vel netus sed molestie praesent ridiculus. Parturient, taciti augue scelerisque cum sed maecenas eu curae;. Commodo fames eros ac, et condimentum! Elementum bibendum libero, litora vitae nascetur dapibus. Orci litora sociosqu dolor ultrices sed ultrices accumsan sem erat. Venenatis sem, nec non lobortis. Consequat mauris platea aliquam pulvinar fusce sagittis id nec ac pellentesque? Integer habitasse, potenti vestibulum primis faucibus ante pellentesque. Pretium consequat nunc ultricies curae; nostra turpis cras ultricies sed dapibus ultricies. Justo enim fringilla vel. Duis senectus semper interdum dictum ut tristique nec.
+## Quick Links
 
-Ac phasellus elit venenatis sagittis congue rutrum. Sit eget iaculis nam risus conubia lacinia cursus morbi. Litora nisi habitant auctor lobortis varius pretium, platea fringilla sem laoreet urna. Varius luctus enim urna. Cursus fusce volutpat tellus quis venenatis vestibulum enim. Consequat porttitor diam posuere platea primis. Litora netus congue congue augue potenti egestas lectus accumsan nisl. Curae; mi, fringilla mi. Potenti accumsan mollis augue orci vel varius bibendum porta mus netus! Pulvinar sapien sociosqu vivamus tincidunt scelerisque lectus platea cursus. Nullam suscipit primis pellentesque neque nam maecenas netus orci dictumst fames egestas suspendisse. Tempor etiam risus mus curae; eu vitae lacus venenatis convallis senectus rhoncus! Amet metus amet interdum. Senectus vehicula elit sit diam volutpat pharetra. Cras posuere justo risus purus, id libero habitasse ac nascetur magnis dignissim proin. Sociis arcu per praesent? Semper fusce diam porta ipsum. Fames in turpis pretium justo mattis! Blandit massa hendrerit habitasse, suspendisse lacinia luctus maecenas? Vulputate natoque nec vitae senectus molestie duis taciti conubia proin scelerisque odio penatibus? Volutpat tempus commodo porta risus montes porta porttitor erat. Hac dapibus justo fusce.
-
-Pulvinar lacus sodales nisl praesent nisi phasellus ante dictumst proin. Sodales diam sollicitudin congue et ultricies class pretium lobortis. Ac dolor condimentum tincidunt semper per, rhoncus id nunc ullamcorper. Parturient conubia dui, non sociis erat. Sociosqu duis elit praesent sollicitudin ac ad! Nulla mi diam nostra hac turpis platea netus facilisi dictumst litora. Varius eu class curabitur. Ligula, semper erat senectus diam! Netus euismod.
-
-Adipiscing risus venenatis neque scelerisque urna ut. Pulvinar netus magnis curae; adipiscing torquent potenti mollis eget erat fusce porttitor facilisi? Condimentum suscipit fringilla sociis eros sollicitudin! Pretium hac ridiculus convallis euismod rutrum fringilla consequat dignissim urna platea rutrum! Mattis viverra pellentesque nullam nunc nam aenean. Ridiculus porta praesent aenean mollis suspendisse augue mollis faucibus ad ac tellus? Purus cum natoque nibh neque lorem nostra venenatis? Augue nascetur nisl a torquent mattis pretium urna nascetur cubilia. Platea litora nam porta elit facilisi sit, facilisi diam cras. Sociis eleifend conubia nascetur lacus sodales, habitant feugiat mollis. Eleifend elementum sed?
-
-Lacus fusce nam torquent congue aptent semper a lacus. Enim massa nunc ac penatibus hac phasellus etiam. Blandit hac laoreet ipsum ipsum amet amet ut nullam metus lobortis curabitur. Lobortis senectus curabitur sem luctus adipiscing pharetra ut nostra proin nam est convallis. Ridiculus proin convallis natoque himenaeos mollis odio. Proin placerat malesuada inceptos mollis lacinia suscipit sit nulla. Rutrum aenean lorem nulla. Adipiscing tempor amet, curae; egestas aliquet. Nisi rutrum curae; potenti tellus lacus mi eget. Sodales non lacus rutrum. Egestas aliquam adipiscing non ligula id augue tempus cum. Potenti ullamcorper, congue eros. Lacus lorem nullam suscipit id proin sapien dignissim dictum? Tellus, dis sed dolor scelerisque a. Facilisis praesent, inceptos potenti erat montes. Eros pulvinar elit tellus dignissim parturient eget ac dis quisque, feugiat magna. Integer potenti dolor sociis suspendisse vestibulum sed! Tincidunt quam cursus, massa eleifend leo bibendum luctus dapibus accumsan! Tortor metus dui justo aliquet. Porta odio, eleifend himenaeos. Commodo nulla netus rhoncus facilisi urna maecenas quam sollicitudin eleifend facilisis. Magna pulvinar viverra cursus condimentum. Enim in facilisi quam rhoncus.
-
+{% assign author = site.data.author %}
+You can reach out to me on [LinkedIn](https://www.linkedin.com/in/{{ author.linkedin }}) or via [email](mailto:{{ author.email }}). You can find my CV and its friends here:
+ - [Resume (Tech)](/files/cv-tech.pdf)
+ - [Resume (Academic)](/files/cv-academic.pdf)
+ - [Teaching Dossier](/files/dossier.pdf)

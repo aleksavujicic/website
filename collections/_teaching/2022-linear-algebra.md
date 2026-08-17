@@ -7,13 +7,7 @@ date: 2022-05-01
 location: "Waterloo, ON, Canada"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+I taught a first-year course on linear algebra. From the university [courses page](https://ucalendar.uwaterloo.ca/2223/COURSE/course-MATH.html):
+> Systems of linear equations, matrix algebra, elementary matrices, computational issues. Real n-space, vector spaces and subspaces, basis and dimension, rank of a matrix, linear transformations, and matrix representations. Determinants, eigenvalues and diagonalization, applications.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+More details to come...

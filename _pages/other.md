@@ -4,13 +4,15 @@ permalink: /other/
 author_profile: true
 ---
 
-# Other Fun Stuff
+## Bonus Content
+A bit of extra stuff about me, or my hobbies. As with a lot of other content on this website, more will come at a later date...
 
 ### Sudoku Puzzles
+I love variant sudoku puzzles! The YouTube channel [Cracking the Cryptic](https://www.youtube.com/c/CrackingTheCryptic) is a great introduction to these and covers a plethora of fantastic puzzles. I've occasionally tried my hand at puzzle constructing, and a few that I'm quite happy with are below. Have fun!
 - [Arrow-bic Exercise](https://sudokupad.app/az75jhr5ex)
 - [Nine Quilts](https://sudokupad.app/1ywmlyrmdn)
 
-
+{% comment %}
 # My Todo List
 - Fix item pages:
   - Styling and spacing
@@ -32,3 +34,4 @@ author_profile: true
 - <del>Change "Homepage" title on navbar</del>
 - Something I forgot?
 - Pet pictures?
+{% endcomment %}
