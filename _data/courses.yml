@@ -60,57 +60,52 @@ uw:
       code: PMATH810
       title: Banach Algebras and Operator Theory
     tut:
-      code: Tutorial Centre
+      code: Tutor
+      title: Mathematics Tutoring Centre
 
   teachings:
-    - course: math115
-      semester: fall, 2025
-    - course: math600
-      semester: fall, 2025
-      load: 0.5
-    - course: math692
-      semester: fall, 2025
-    - course: math640
-      semester: spring, 2025
-    - course: tut
-      semester: spring, 2025
-    - course: math648
-      semester: winter, 2025
-    - course: tut
-      semester: winter, 2025
-    - course: math685
-      semester: fall, 2024
-    - course: pmath330
-      semester: fall, 2024
-    - course: tut
-      semester: spring, 2024
-    - course: math148
-      semester: winter, 2024
-    - course: tut
-      semester: winter, 2024
-    - course: math237
-      semester: fall, 2023
-      teach-link: 2023-calculus
-    - course: math245
-      semester: spring, 2023
-    - course: pmath451
-      semester: winter, 2023
-      load: 1.5
-    - course: pmath810
-      semester: winter, 2023
-      load: 0.5
-    - course: math115
-      semester: fall, 2022
-    - course: tut
-      semester: fall, 2022
-    - course: math136
-      semester: spring, 2022
-      teach-link: 2022-linear-algebra
-    - course: math135
-      semester: winter, 2022
-    - course: math235
-      semester: winter, 2022
-
+    2025:
+      fall:
+        - course: math115
+        - course: math600
+          load: 0.5
+        - course: math692
+      spring:
+        - course: math640
+        - course: tut
+      winter:
+        - course: math648
+        - course: tut
+    2024:
+      fall:
+        - course: math685
+        - course: pmath330
+      spring:
+        - course: tut
+      winter:
+        - course: math148
+        - course: tut
+    2023:
+      fall:
+        - course: math237
+          teach-link: 2023-calculus
+      spring:
+        - course: math245
+      winter:
+        - course: pmath451
+          load: 1.5
+        - course: pmath810
+          load: 0.5
+    2022:
+      fall:
+        - course: math115
+        - course: tut
+      spring:
+        - course: math136
+          teach-link: 2022-linear-algebra
+      winter:
+        - course: math135
+        - course: math235
 
 vuw:
   semesters:
@@ -139,9 +134,10 @@ vuw:
       title: Coding and Cryptography
 
   teachings:
-    - course: engr121
-      semester: t1, 2015
-    - course: math309
-      semester: t2, 2019
-    - course: math324
-      semester: t2, 2019
+    2019:
+      t2:
+        - course: math309
+        - course: math324
+    2015:
+      t1:
+        - course: engr121

@@ -2,8 +2,38 @@
 {% assign teachings = uni_data.teachings %}
 
 <div class="list-group course-list">
-  {% for teaching in teachings %}
+  {% for year_hash in teachings %}
+    {% assign year = year_hash[0] %}
+    {% for semester_hash in year_hash[1] %}
+      {% assign semester_code = semester_hash[0] %}
+      {% assign semester = uni_data.semesters[semester_code] %}
 
-    {% include teaching-single.html uni_data=uni_data teaching=teaching %}
+      {% assign semester_start = semester.start | append: "-" | append: year %}
+      {% assign semester_end = semester.end | append: "-" | append: year %}
+      {% assign date_format = "%d %b %Y" %}
+
+      <div class="list-group-item semester">
+        <div class="semester-courses">
+          {% for offering in semester_hash[1] %}
+            {% assign course = uni_data.courses[offering.course] %}
+            <div class="course">
+              <span class="course-code">{{ course.code }}</span>
+              {% if course.title %}
+                <span class="course-title">{{ course.title }}</span>
+              {% endif %}
+              {% if offering.load %}
+                <span class="course-load">({{ offering.load }} TA units)</span>
+              {% endif %}
+              {% if offering.teach-link %}
+                <small class="course-bonus d-block text-body-secondary">Lecturer, <a href="/teaching/{{ offering.teach-link }}">details...</a></small>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+        <div class="course-semester">
+          <abbr title="{{ semester_start | date: date_format }} to {{ semester_end | date: date_format }}">{{ semester.name }}, {{ year }}</abbr>
+        </div>
+      </div>
+    {% endfor %}
   {% endfor %}
 </div>

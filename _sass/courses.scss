@@ -1,0 +1,30 @@
+.course-list {
+  margin: 1.5rem 0;
+}
+.semester {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.course-code {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.course-title {
+  font-size: 0.875rem;
+}
+.course-load {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.course-semester {
+  opacity: 50%;
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
+.course-bonus {
+  --bs-text-opacity: 1;
+  color: var(--bs-secondary-color);
+  display: block;
+  font-size: 0.875rem;
+}
