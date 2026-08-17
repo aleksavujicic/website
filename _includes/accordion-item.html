@@ -3,7 +3,7 @@
   <h2 class="accordion-header" id="heading{{ slug }}">
     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ slug }}" aria-expanded="false" aria-controls="collapse{{ slug }}">
       <div class="accordion-item-title">
-        {{ post.title }}
+        {{ post.title | markdownify | strip_html | strip_newlines | escape_once }}
       </div>
 
       {% if post.date %}
@@ -18,7 +18,7 @@
   </h2>
   <div id="collapse{{ slug }}" class="accordion-collapse collapse" aria-labelledby="heading{{ slug }}" data-bs-parent="#{{ accordion_id }}">
     <div class="accordion-item-content">
-      {% if post.excerpt %}<p class="">{{ post.excerpt  }}</p>{% endif %}
+      {% if post.excerpt %}<p class="">{{ post.excerpt }}</p>{% endif %}
 
       {% include item/metadata.html post=post %}
 
