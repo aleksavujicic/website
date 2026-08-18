@@ -33,10 +33,24 @@
         border: 1px solid var(--bs-dark-border-subtle);
     }
 }
+.author__bio {
+    padding: 0 0.5rem;
+}
 
 .social-icons {
     list-style-type: none;
     margin: 0;
     padding: 0;
     padding-left: 10px;
+}
+
+.social-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.icon-pad-right {
+  margin-right: 0.5em;
 }
