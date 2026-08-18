@@ -8,9 +8,9 @@ author_profile: true
 A bit of extra stuff about me, or my hobbies. As with a lot of other content on this website, more will come at a later date...
 
 ### Sudoku Puzzles
-I love variant sudoku puzzles! The YouTube channel [Cracking the Cryptic](https://www.youtube.com/c/CrackingTheCryptic) is a great introduction to these and covers a plethora of fantastic puzzles. I've occasionally tried my hand at puzzle constructing, and a few that I'm quite happy with are below. Have fun!
-- [Arrow-bic Exercise](https://sudokupad.app/az75jhr5ex)
-- [Nine Quilts](https://sudokupad.app/1ywmlyrmdn)
+I love variant sudoku puzzles! The YouTube channel [Cracking the Cryptic](https://www.youtube.com/c/CrackingTheCryptic){:target="_blank"} is a great introduction to these and covers a plethora of fantastic puzzles. I've occasionally tried my hand at puzzle constructing, and a few that I'm quite happy with are below. Have fun!
+- [Arrow-bic Exercise](https://sudokupad.app/az75jhr5ex){:target="_blank"}
+- [Nine Quilts](https://sudokupad.app/1ywmlyrmdn){:target="_blank"}
 
 {% comment %}
 # My Todo List

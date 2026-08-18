@@ -12,7 +12,7 @@ Hi! I'm Aleksa, a recent PhD graduate in mathematics. As you can see by this rat
 ## Quick Links
 
 {% assign author = site.data.author %}
-You can reach out to me on [LinkedIn](https://www.linkedin.com/in/{{ author.linkedin }}) or via [email](mailto:{{ author.email }}). You can find my CV and its friends here:
- - [Resume (Tech)](/files/cv-tech.pdf)
- - [Resume (Academic)](/files/cv-academic.pdf)
- - [Teaching Dossier](/files/dossier.pdf)
+You can reach out to me on [LinkedIn](https://www.linkedin.com/in/{{ author.linkedin }}){:target="_blank"} or via [email](mailto:{{ author.email }}). You can find my CV and its friends here:
+ - [Resume (Tech)](/files/cv-tech.pdf){:target="_blank"}
+ - [Resume (Academic)](/files/cv-academic.pdf){:target="_blank"}
+ - [Teaching Dossier](/files/dossier.pdf){:target="_blank"}
