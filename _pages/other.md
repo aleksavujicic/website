@@ -2,6 +2,7 @@
 layout: default
 permalink: /other/
 author_profile: true
+title: Bonus
 ---
 
 ## Bonus Content
