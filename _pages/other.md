@@ -13,6 +13,10 @@ I love variant sudoku puzzles! The YouTube channel [Cracking the Cryptic](https:
 - [Arrow-bic Exercise](https://sudokupad.app/az75jhr5ex){:target="_blank"}
 - [Nine Quilts](https://sudokupad.app/1ywmlyrmdn){:target="_blank"}
 
+If you get a little stuck, here are the solutions:
+- [Arrow-bic Exercise](/files/arrowbic-solution.pdf)
+- Nine Quilts (forthcoming...)
+
 {% comment %}
 # My Todo List
 - Fix item pages:
